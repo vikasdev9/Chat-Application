@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create Account"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/_23sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartanbold"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/man"
+            app:civ_border_width="2dp"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:civ_border_color="#FF000000"/>
+
+        <EditText
+            android:id="@+id/editNameregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Enter Name"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editEmailregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Email Address"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/editPasswordregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Enter Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+        <EditText
+            android:id="@+id/editPasswordconfirmregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Enter Confirm Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/sign_upregister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/sign_in"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/spartanbold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spartanregular"
+            android:textSize="@dimen/_16sdp"
+            android:text="Already have an account? "/>
+
+        <TextView
+            android:id="@+id/Sign_In"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_purple"
+            android:fontFamily="@font/spartanbold"
+            android:textSize="@dimen/_16sdp"
+            android:text=".Sign In"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

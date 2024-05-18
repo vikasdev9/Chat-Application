@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ChatApp</string>
+    <string name="quick_chat">Quick Chat</string>
+</resources>

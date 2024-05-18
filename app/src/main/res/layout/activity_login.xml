@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:background="@drawable/splashscreeen"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textSize="@dimen/_25sdp"
+            android:textStyle="bold"
+            android:fontFamily="@font/spartanbold"/>
+
+        <EditText
+            android:id="@+id/editEmaillogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_shape"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Email Address"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:inputType="textEmailAddress"/>
+
+        <EditText
+            android:id="@+id/editPasswordlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/edit_shape"
+            android:layout_margin="@dimen/_10sdp"
+            android:fontFamily="@font/spartanregular"
+            android:hint="Enter Password"
+            android:textColor="@color/black"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/Sign_inlogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_10sdp"
+            android:background="@drawable/sign_in"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:textStyle="bold"
+            android:textSize="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:fontFamily="@font/spartanbold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/spartanregular"
+            android:textSize="@dimen/_16sdp"
+            android:text="I'm New User"/>
+
+        <TextView
+            android:id="@+id/Sign_Up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_purple"
+            android:fontFamily="@font/spartanbold"
+            android:textSize="@dimen/_16sdp"
+            android:text=". Sign Up"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
